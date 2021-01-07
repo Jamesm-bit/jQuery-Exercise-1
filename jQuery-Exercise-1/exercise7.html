@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furth Pattern</title>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="style7.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <button id="button1">Click to see the effect</button>
+
+
+    <script>
+        $("button").click(function () {
+            $('#div1').animate({height: '10px'})
+            $('#div1').addClass("colored")
+            $('#div2').animate({height: '20px'})
+            $('#div2').addClass('colored')
+        })
+
+    </script>
+</body>
+
+</html>

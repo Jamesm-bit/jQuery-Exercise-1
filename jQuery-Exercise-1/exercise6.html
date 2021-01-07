@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furth Pattern</title>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="iddiv">
+        <span>This is a span</span>
+        <p>This is a Paragraph</p>
+        <button id="button1" onclick="countElements()">Click to see the effect</button>
+    </div>
+    <script>
+        function countElements() {
+            console.log($("div").children().length)
+        }
+    </script>
+</body>
+
+</html>

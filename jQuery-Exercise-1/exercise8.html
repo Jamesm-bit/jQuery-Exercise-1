@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furth Pattern</title>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <p>jQuery Exercises, Practice, <em id="titleExercise">Solution</em></p>
+        <button onclick='getTitle()'>Click to see the effect</button>
+    </div>
+
+
+    <script>
+        function getTitle() {
+            document.getElementById("titleExercise").title = "Real life jQuery or all";
+            let title = $('<p></p>').text($('em').prop('title'))
+            $('p').append(title)
+        }
+    </script>
+</body>
+
+</html>
