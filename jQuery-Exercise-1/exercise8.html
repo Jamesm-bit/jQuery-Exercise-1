@@ -11,14 +11,13 @@
 
 <body>
     <div>
-        <p>jQuery Exercises, Practice, <em id="titleExercise">Solution</em></p>
+        <p>jQuery Exercises, Practice, <em id="titleExercise" title="Test">Solution</em></p>
         <button onclick='getTitle()'>Click to see the effect</button>
     </div>
 
 
     <script>
         function getTitle() {
-            document.getElementById("titleExercise").title = "Real life jQuery or all";
             let title = $('<p></p>').text($('em').prop('title'))
             $('p').append(title)
         }

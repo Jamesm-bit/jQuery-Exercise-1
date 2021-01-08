@@ -13,9 +13,16 @@
     <form>
         First name: <input type="text" name="fname"><br>
         Last name: <input type="text" name="lname" disabled><br>
+        Last name: <input type="text" name="lname"><br>
+        Last name: <input type="text" name="lname" disabled><br>
     </form>
     <script>
-        console.log($('input').is(":disabled"))
+        $('input').each(function() {
+            console.log($(this))
+            if($(this).is(':disabled')) {
+                $(this).css('background-color','red')
+            }
+        })
     </script>
 </body>
 

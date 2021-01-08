@@ -1,0 +1,16 @@
+#iddiv{
+    display: flex;
+}
+
+span {
+    height: 50px;
+    width: 100px;
+    background-color: lightblue;
+    margin: 5px;
+}
+p {
+    height: 50px;
+    width: 100px;
+    background-color: lightblue;
+    margin: 5px;
+}
